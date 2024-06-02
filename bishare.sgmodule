@@ -8,6 +8,6 @@ hostname = %APPEND% grpc.biliapi.net, app.bilibili.com
 
 
 [Script]
-iPhone端共享会员 = type=http-request, pattern=^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.playerunite\.v1\.Player\/PlayViewUnite(\?.+)?$, script-path=https://raw.githubusercontent.com/blueskycrg/bishare/main/bishare.js
+iPhone端共享会员 = type=http-request, pattern=^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.playerunite\.v1\.Player\/PlayViewUnite(\?.+)?$, script-path=https://raw.githubusercontent.com/blueskycrg/Rewrite/main/bishare.js
 
-iPad端共享会员 = type=http-request, pattern=^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.pgc\.gateway\.player\.v2\.PlayURL\/PlayView$, script-path=https://raw.githubusercontent.com/blueskycrg/bishare/main/bishare.js
+iPad端共享会员 = type=http-request, pattern=^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.pgc\.gateway\.player\.v2\.PlayURL\/PlayView$, script-path=https://raw.githubusercontent.com/blueskycrg/Rewrite/main/bishare.js
