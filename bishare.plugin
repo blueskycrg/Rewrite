@@ -1,0 +1,9 @@
+#!name = Bilibili共享会员
+#!desc = 需要启用MitM-over-HTTP/2功能，请严格填写数据，支持iPad端。使用时需启用此插件，禁用则共享会员失效，点击下方链接查看使用说明。
+
+[Script]
+http-request ^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.playerunite\.v1\.Player\/PlayViewUnite(\?.+)?$ script-path = https://raw.githubusercontent.com/blueskycrg/bishare/main/bishare.js, tag = iPhone端共享会员
+http-request ^https?:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.pgc\.gateway\.player\.v2\.PlayURL\/PlayView$ script-path = https://raw.githubusercontent.com/blueskycrg/bishare/main/bishare.js, tag = iPad端共享会员
+  
+[Mitm]
+hostname = grpc.biliapi.net, app.bilibili.com
